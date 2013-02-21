@@ -93,21 +93,21 @@ nav.grid li {
 	margin: 0 1%;
 }
 
-nav.grid a	{
+nav.grid a, a.adk	{
 	background-color: #bd0000;
 	box-shadow: 0 -25px 15px rgba(0, 0, 0, 0.25) inset, 0 1px 3px rgba(0,0,0, .75);
 	border-radius: 6px;
 	border-top: 1px solid #ee0000;
 	width: auto;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-		-webkit-transition: box-shadow 0.3s ease;
-  -moz-transition: box-shadow 0.3s ease;
-  -o-transition: box-shadow 0.3s ease;
-  transition: box-shadow 0.3s ease;
-  -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-transition: box-shadow 0.3s ease;
+  	-moz-transition: box-shadow 0.3s ease;
+  	-o-transition: box-shadow 0.3s ease;
+ 	 transition: box-shadow 0.3s ease;
+ 	 -webkit-user-select:none;
+   	 -moz-user-select:none;
+   	 -ms-user-select:none;
+  	  user-select:none;
 }
 
 nav.grid a:hover {
@@ -156,11 +156,7 @@ body#pray_one	{
 }
 
 a.adk	{
-	background-color: #f3f3f2;
-	box-shadow: 0 -15px 10px rgba(0, 0, 0, 0.45) inset, 1px 1px 6px rgba(0, 0, 0, 0.6);
-	border-radius: 6px;
-	border: 2px solid #5a8fc0;
-	padding: 4px 3%;
+	padding: 1px 3% 7px;
 	color: #FFF;
 	font-size: 1.4rem;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
