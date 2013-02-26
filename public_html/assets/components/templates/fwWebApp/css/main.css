@@ -17,31 +17,54 @@ img {
     Menu
    ============== */
 
-nav ul {
+nav.grid {
+        width: 100%;
+    max-width: 1200px;
+}
+
+nav.grid ul {
     margin: 0;
     padding: 0;
 }
 
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+nav.grid li {
+  margin: 0 1%;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
+nav.grid a, a.button  {
+  background-color: #bd0000;
+  box-shadow: 0 -25px 15px rgba(0, 0, 0, 0.25) inset, 0 1px 3px rgba(0,0,0, .75);
+  border-radius: 6px;
+  border-top: 1px solid #ee0000;
+  color: white;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: box-shadow 0.3s ease;
+    -moz-transition: box-shadow 0.3s ease;
+    -o-transition: box-shadow 0.3s ease;
+   transition: box-shadow 0.3s ease;
+   -webkit-user-select:none;
+     -moz-user-select:none;
+     -ms-user-select:none;
+      user-select:none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav.grid a:hover, nav.grid a:visited, a.button:hover {
+  box-shadow: 0 0 30px rgba(255,255,255, 0.35) inset, 0 3px 5px rgba(0,0,0, 1);
+  color: white;
+  text-decoration: none;
+}
+
+nav.grid a:active {
+    border-top: none;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #9b0000;
 }
 
 /* ==============
@@ -49,7 +72,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 15px 0;
 }
 
 .main article h1 {
@@ -66,12 +89,12 @@ nav a:hover {
 
 
 body#home	{
-	background: #000 url(public_html/assets/components/templates/fwWebApp/images/bkg.png) center center no-repeat;
+	background: #000 url(/public_html/assets/components/templates/fwWebApp/images/bkg.png) center center no-repeat;
 	background-size: cover;
     min-height:100%;
 }
 
-#home .header-container	{
+.header-container	{
     background: #FFF;
     border-bottom: 10px solid #bd0000;
     opacity: .95;
@@ -84,43 +107,6 @@ img.title	{
 	margin: 0 auto;
 }
 
-nav.grid {
-        width: 100%;
-		max-width: 1200px;
-}
-
-nav.grid li {
-	margin: 0 1%;
-}
-
-nav.grid a, a.adk	{
-	background-color: #bd0000;
-	box-shadow: 0 -25px 15px rgba(0, 0, 0, 0.25) inset, 0 1px 3px rgba(0,0,0, .75);
-	border-radius: 6px;
-	border-top: 1px solid #ee0000;
-	width: auto;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-	-webkit-transition: box-shadow 0.3s ease;
-  	-moz-transition: box-shadow 0.3s ease;
-  	-o-transition: box-shadow 0.3s ease;
- 	 transition: box-shadow 0.3s ease;
- 	 -webkit-user-select:none;
-   	 -moz-user-select:none;
-   	 -ms-user-select:none;
-  	  user-select:none;
-}
-
-nav.grid a:hover {
-  box-shadow: 0 0 30px rgba(255,255,255, 0.35) inset, 0 3px 5px rgba(0,0,0, 1);
-  text-decoration: none;
-}
-
-nav.grid a:active {
-    border-top: none;
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-    background: #9b0000;
-}
-
 
 
 /* ==========================================================================
@@ -128,19 +114,20 @@ nav.grid a:active {
    ========================================================================== */
 
 body#pray_one	{
-	background: #000 url(public_html/assets/components/templates/fwWebApp//images/joanna_1.jpg) center center no-repeat;
+	background: #000 url(/public_html/assets/components/templates/fwWebApp//images/joanna_1.jpg) center center no-repeat;
 	background-size: cover;
 	color:#FFF;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
 	font-size: 1.6rem;
 	min-height:100%;
+  text-shadow:1px 1px #000;
 }
 
-#pray_one .header-container	{
+/*#pray_one .header-container	{
     background: transparent;
     border-bottom: none;
-}
+}*/
 
 #pray_one .main article p	{
 	color: rgba(255, 255, 255, 0.8);
@@ -155,13 +142,8 @@ body#pray_one	{
 
 }
 
-a.adk	{
-	padding: 1px 3% 7px;
-	color: #FFF;
-	font-size: 1.4rem;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
-	text-decoration: none;
-	float: right;
+a.button	{
+	font-size: 1.2rem;
 }
 
 
